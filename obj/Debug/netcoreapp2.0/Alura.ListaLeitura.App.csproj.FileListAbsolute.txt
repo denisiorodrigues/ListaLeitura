@@ -10,3 +10,15 @@ C:\Users\denisio\source\repos\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debu
 C:\Users\denisio\source\repos\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
 C:\Users\denisio\source\repos\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.genruntimeconfig.cache
 C:\Users\denisio\source\repos\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.csproj.CoreCompileInputs.cache
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.deps.json
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.runtimeconfig.json
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.runtimeconfig.dev.json
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.dll
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\bin\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.csprojAssemblyReference.cache
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.AssemblyInfoInputs.cache
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.AssemblyInfo.cs
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.csproj.CoreCompileInputs.cache
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.dll
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.pdb
+C:\Users\DenisioRodrigues\source\repos\ListaLeitura\obj\Debug\netcoreapp2.0\Alura.ListaLeitura.App.genruntimeconfig.cache

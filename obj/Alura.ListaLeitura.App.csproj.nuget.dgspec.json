@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\denisio\\source\\repos\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj": {}
+    "C:\\Users\\DenisioRodrigues\\source\\repos\\ListaLeitura\\Alura.ListaLeitura.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\denisio\\source\\repos\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj": {
+    "C:\\Users\\DenisioRodrigues\\source\\repos\\ListaLeitura\\Alura.ListaLeitura.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denisio\\source\\repos\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
+        "projectUniqueName": "C:\\Users\\DenisioRodrigues\\source\\repos\\ListaLeitura\\Alura.ListaLeitura.App.csproj",
         "projectName": "Alura.ListaLeitura.App",
-        "projectPath": "C:\\Users\\denisio\\source\\repos\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
-        "packagesPath": "C:\\Users\\denisio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denisio\\source\\repos\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\obj\\",
+        "projectPath": "C:\\Users\\DenisioRodrigues\\source\\repos\\ListaLeitura\\Alura.ListaLeitura.App.csproj",
+        "packagesPath": "C:\\Users\\DenisioRodrigues\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DenisioRodrigues\\source\\repos\\ListaLeitura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\denisio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DenisioRodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +62,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
