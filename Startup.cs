@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App
@@ -23,7 +24,8 @@ namespace Alura.ListaLeitura.App
             routerBuilder.MapRoute("livros/paraler", LivrosParaLer);
             routerBuilder.MapRoute("livros/lendo", LivrosLendo);
             routerBuilder.MapRoute("livros/lidos", LivrosLidos);
-            routerBuilder.MapRoute("cadastro/NovoLivro/{nome}/{autor}", cadastroNovoLivro);
+            routerBuilder.MapRoute("cadastro/NovoLivro/{nome}/{autor}", CadastroNovoLivro);
+            routerBuilder.MapRoute("Livros/Detalhes/{id:int}", ExibirDetalhes);
 
             var rotas = routerBuilder.Build();
             app.UseRouter(rotas);
@@ -31,7 +33,16 @@ namespace Alura.ListaLeitura.App
             //app.Run(Roteamento);
         }
 
-        private Task cadastroNovoLivro(HttpContext context)
+        private Task ExibirDetalhes(HttpContext context)
+        {
+            int id = Convert.ToInt32(context.GetRouteValue("id"));
+            var repo = new LivroRepositorioCSV();
+            Livro livro = repo.Todos.First(x => x.Id == id);
+
+            return context.Response.WriteAsync(livro.Detalhes());
+        }
+
+        private Task CadastroNovoLivro(HttpContext context)
         {
             Livro livro = new Livro() 
             { 
