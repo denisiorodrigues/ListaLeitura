@@ -13,7 +13,7 @@ namespace Alura.ListaLeitura.App
 {
     public class Startup
     {
-        public void ConfigureServices(IServiceCollection services) 
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting();
         }
@@ -26,11 +26,22 @@ namespace Alura.ListaLeitura.App
             routerBuilder.MapRoute("livros/lidos", LivrosLidos);
             routerBuilder.MapRoute("cadastro/NovoLivro/{nome}/{autor}", CadastroNovoLivro);
             routerBuilder.MapRoute("Livros/Detalhes/{id:int}", ExibirDetalhes);
+            routerBuilder.MapRoute("Cadastro/NovoLivro", ExibeFormulario);
 
             var rotas = routerBuilder.Build();
             app.UseRouter(rotas);
 
             //app.Run(Roteamento);
+        }
+
+        private Task ExibeFormulario(HttpContext context)
+        {
+            var html = @"<form>
+                            <input />
+                            <input />
+                            <button>Gravar</button>
+                        </form>";
+            return context.Response.WriteAsync(html);
         }
 
         private Task ExibirDetalhes(HttpContext context)
@@ -44,8 +55,8 @@ namespace Alura.ListaLeitura.App
 
         private Task CadastroNovoLivro(HttpContext context)
         {
-            Livro livro = new Livro() 
-            { 
+            Livro livro = new Livro()
+            {
                 Titulo = context.GetRouteValue("nome").ToString(),
                 Autor = context.GetRouteValue("autor").ToString(),
             };
@@ -55,7 +66,7 @@ namespace Alura.ListaLeitura.App
             return context.Response.WriteAsync("Livro adicionado com sucesso!");
         }
 
-        public Task Roteamento(HttpContext context) 
+        public Task Roteamento(HttpContext context)
         {
             var _repo = new LivroRepositorioCSV();
             var caminhosAtendidos = new Dictionary<string, RequestDelegate>()
