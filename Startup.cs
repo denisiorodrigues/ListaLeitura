@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -35,6 +36,15 @@ namespace Alura.ListaLeitura.App
             //app.Run(Roteamento);
         }
 
+        private string CarregaArquivoHTML(string nomeArquivo)
+        {
+            string nomeCompletoArquivo = $"HTML/{nomeArquivo}.html";
+            using (var arquivo = File.OpenText(nomeCompletoArquivo))
+            {
+                return arquivo.ReadToEnd();
+            }
+        }
+
         private Task ProcessaFormulario(HttpContext context)
         {
             Livro livro = new Livro()
@@ -50,14 +60,7 @@ namespace Alura.ListaLeitura.App
 
         private Task ExibeFormulario(HttpContext context)
         {
-            var html = @"<html>
-                            <form action='/Cadastro/Incluir'>
-                                <input name='titulo'/>
-                                <input name='autor'/>
-                                <button>Gravar</button>
-                            </form>
-                        </html>";
-
+            var html = CarregaArquivoHTML("formulario");
             return context.Response.WriteAsync(html);
         }
 
